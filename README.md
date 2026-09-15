@@ -33,7 +33,7 @@
 
 ```bash
 # 从 GitHub 安装到某个 profile
-dsh plugin --profile <profile> add git+https://github.com/motang1219/kaiwu-praxis.git#v0.5.1
+dsh plugin --profile <profile> add git+https://github.com/hemuroukLY/kaiwu-praxis.git#v0.5.1
 
 # 本地链接开发
 dsh plugin --profile <profile> add link:<本仓库绝对路径>
