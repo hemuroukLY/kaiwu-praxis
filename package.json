@@ -1,6 +1,6 @@
 {
   "name": "kaiwu-praxis",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "type": "module",
   "description": "开物 Praxis 员工端：确定性工具、7 个数字员工与员工设置",
   "main": "lib/index.js",
@@ -8,6 +8,7 @@
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
     "./tool-policy": "./lib/tool-policy.mjs",
+    "./usage": "./lib/usage/index.mjs",
     "./package.json": "./package.json"
   },
   "files": [

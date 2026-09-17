@@ -1,0 +1,13 @@
+{
+  "files": [
+    "00-header.js",
+    "01-usage-display.js",
+    "10-css.js",
+    "20-i18n.js",
+    "30-helpers.js",
+    "40-plaza.js",
+    "50-admin-panel.js",
+    "60-capability.js",
+    "70-apply.js"
+  ]
+}
