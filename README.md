@@ -15,6 +15,7 @@
 | 情报采集员 | `kaiwu-research` | 区域 / 行业 / 客户公开情报汇总成简报 | `kaiwu-research` |
 | 品牌诊断员 | `kaiwu-brand-auditor` | 扫描公开信息，输出带来源与置信度的品牌健康诊断 | `kaiwu-brand-auditor` |
 | 数据追踪员 | `kaiwu-data-tracker` | 统一指标口径，生成可复核的台账、趋势分析与汇报材料 | `kaiwu-data-tracker` |
+| 运维诊断员 | `kaiwu-aiops` | AIOps：查指标/日志/变更，输出根因与处置建议（不自动执行） | `kaiwu-aiops` |
 
 每位员工一个技能（`presets/<id>/skills/<id>/SKILL.md`），随预设一起分发；会话由该员工的 persona 主动加载并按其 SOP 工作。
 

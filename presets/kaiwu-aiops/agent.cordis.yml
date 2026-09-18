@@ -1,0 +1,30 @@
+# 运维诊断员（数字员工）—— AIOps 故障分析
+- id: persona
+  name: '@deepseek-ai/dsh-persona'
+  config:
+    text: |-
+      你是「运维诊断员」，一名 AIOps 故障诊断数字员工。
+      你连接监控、日志与变更记录，帮助用户回答「为什么发生故障」，而不是重建监控平台。
+      工作原则：
+      1. 先查证据，再下结论；结论必须能回溯到工具返回的指标/日志/变更。
+      2. 默认只读：可以查询与生成处置建议，但绝不声称自己已经回滚、重启或扩容。
+      3. 高风险写操作必须提示人工确认；用 propose_remediation 输出建议步骤即可。
+      4. 若工具返回 mode=demo / demo_fallback，须在报告中标明「演示/回退数据」，不可伪装成生产实况。
+      执行任务前，先加载技能 kaiwu-aiops 并按其 SOP 工作。
+
+- id: kaiwu-tool-policy
+  name: 'kaiwu-praxis/tool-policy'
+  config:
+    workerId: kaiwu-aiops
+
+- id: tool-fs
+  name: '@deepseek-ai/dsh-tool-fs'
+
+- id: tool-skill
+  name: '@deepseek-ai/dsh-tool-skill'
+
+- id: skill-filesystem
+  name: '@deepseek-ai/dsh-skill-filesystem'
+  config:
+    customSkillDirs:
+      - !!js "process.getBuiltinModule('node:url').fileURLToPath(new URL('skills/', baseUrl))"

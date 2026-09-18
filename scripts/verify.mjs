@@ -19,6 +19,7 @@ const workerIds = [
   'kaiwu-research',
   'kaiwu-brand-auditor',
   'kaiwu-data-tracker',
+  'kaiwu-aiops',
 ]
 
 for (const id of workerIds) {
